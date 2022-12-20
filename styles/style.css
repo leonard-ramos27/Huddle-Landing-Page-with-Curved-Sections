@@ -10,11 +10,12 @@
 :root{
     --pink: hsl(322, 100%, 66%);
     --dark-cyan: hsl(192, 100%, 9%);
-    --pale-blue: hsl(207, 100%, 98%);
+    --pale-blue: #F6FBFF;
 }
 
 body{
     min-width: 350px;
+    background-color: white;
 }
 
 header{
@@ -45,7 +46,8 @@ header,
     box-shadow: 0 0 3px 0 lightpink;
 }
 
-.hero-wrapper{
+.hero-wrapper,
+.grow-together-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,23 +55,31 @@ header,
     max-width: 520px;
 }
 
-.hero-wrapper h1{
+.hero-wrapper h1,
+.grow-together-wrapper h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
     text-align: center;
     color: var(--dark-cyan);
+}
+
+.hero-wrapper h1{
+    font-size: 1.5rem;
     padding-top: 3.5rem;
 }
 
-.hero-wrapper p{
+.hero-wrapper p,
+.grow-together-wrapper p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: .8rem;
     text-align: center;
     color: var(--dark-cyan);
-    padding: 1.5rem 1rem;
     /*padding-bottom: 1.5rem;*/
+}
+
+.hero-wrapper p{
+    padding: 1.5rem 1rem;
 }
 
 .hero-wrapper button{
@@ -148,6 +158,47 @@ header,
     justify-self: center;
 }
 
+.blue-bg{
+    background-color: var(--pale-blue);
+}
+
+.grow-together-section{
+    padding: 3rem 1.5rem;
+}
+
+.middle-section{
+    padding: 4rem 1.5rem;
+}
+
+.grow-together-wrapper{
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-grow-together{
+    width: 80%;
+    margin-bottom: 2.5rem;
+}
+
+.grow-together-wrapper h2{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.grow-together-wrapper p{
+    width: 95%;
+}
+
+.svg{
+    margin: 0;
+    width: 100%;
+    border: none;
+}
+
+.top{
+    transform: translateY(5px);
+}
+
 @media screen and (min-width: 700px) {
     .hero-stats{
         grid-auto-flow: column;
@@ -177,11 +228,12 @@ header,
     }
 
     .hero-section{
-        padding: 4rem;
+        padding: 3rem 4rem 4rem 4rem;
     }
 
     .hero-wrapper,
-    .hero-stats{
+    .hero-stats
+    /*.grow-together-wrapper*/{
         max-width: 1050px;
     }
 
@@ -229,6 +281,43 @@ header,
     
     .messages-text{
         font-size: 1.5rem;
-        /*max-width: unset;*/
+    }
+
+    .grow-together-section{
+        padding: 2rem 4rem;
+    }
+
+    .middle-section{
+        padding: 5rem 4rem;
+    }
+
+    .grow-together-wrapper{
+        max-width: 1100px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    .flex-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .img-grow-together{
+        width: 40%;
+    }
+
+    .grow-together-wrapper h2,
+    .grow-together-wrapper p{
+        text-align: left;
+    }
+
+    .grow-together-wrapper h2{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grow-together-wrapper p{
+        font-size: 1rem;
+        max-width: 560px;
     }
 }
