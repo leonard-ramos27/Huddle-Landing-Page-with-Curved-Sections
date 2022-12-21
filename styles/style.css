@@ -19,7 +19,6 @@ body{
 }
 
 header{
-    /*padding: 1.5rem;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -75,7 +74,6 @@ header,
     font-size: .8rem;
     text-align: center;
     color: var(--dark-cyan);
-    /*padding-bottom: 1.5rem;*/
 }
 
 .hero-wrapper p{
@@ -94,7 +92,6 @@ header,
     margin-inline: auto;
     margin-top: 1.3rem;
     box-shadow: 0 6px 12px 0px lightgray;
-    /*margin-bottom: 1rem;*/
 }
 
 .img-mockup{
@@ -108,9 +105,6 @@ header,
 }
 
 .stats-container{
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;*/
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
@@ -127,18 +121,15 @@ header,
 .stats-container h2{
     font-family: 'Poppins', sans-serif;
     color: var(--dark-cyan);
-    /*padding: 0 .3rem;*/
     font-weight: 600; 
 }
 
 .communities-num{
     font-size: 3.5rem;
-    /*font-weight: 600; */
 }
 
 .messages-num{
     font-size: 3.3rem;
-    /*font-weight: 700; */
 }
 
 .stats-container p{
@@ -247,12 +238,12 @@ footer{
 .btn-subscribe{
     border: none;
     border-radius: 5px;
-    padding: 1rem 2.5rem;
+    padding: .8rem 2rem;
     background-color: var(--pink);
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     width: max-content;
     align-self: end;
 }
@@ -275,6 +266,47 @@ footer{
 
 .footer-phone-email p{
     font-size: .8rem;
+}
+
+.footer-socials{
+    margin-top: 2.3rem;
+}
+
+.fa-brands{
+    margin-right: 10px;
+    font-size: x-large;
+}
+
+.fa-brands:hover{
+    color: lightskyblue;
+}
+
+.header-btn,
+.btn-get-started,
+.btn-subscribe{
+    transition-duration: .3s;
+}
+
+.curve-section-img,
+.curve-section-txt > *{
+    transition: .4s ease-in-out;
+}
+
+.header-btn:hover,
+.btn-get-started:hover,
+.btn-subscribe:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header-btn:active,
+.btn-get-started:active,
+.btn-subscribe:active{
+    opacity: 0.5;
+}
+
+.input-subscribe:focus{
+    outline: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -310,8 +342,7 @@ footer{
     }
 
     .hero-wrapper,
-    .hero-stats
-    /*.curve-section-wrapper*/{
+    .hero-stats{
         max-width: 1050px;
     }
 
@@ -332,8 +363,6 @@ footer{
     }
 
     .hero-stats{
-        /*grid-auto-flow: column;
-        margin-inline: auto;*/
         padding: 3rem 0;
     }
 
@@ -436,7 +465,7 @@ footer{
     }
 
     .input-subscribe{
-        height: 59px;
+        height: 47px;
         width: 300px;
     }
 
