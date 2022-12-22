@@ -154,7 +154,7 @@ header,
 }
 
 .curve-section,
-footer{
+.main-footer{
     padding: 3rem 1.5rem;
 }
 
@@ -192,7 +192,7 @@ footer{
     transform: translateY(5px);
 }
 
-footer{
+.main-footer{
     background-color: var(--dark-cyan);
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -213,6 +213,7 @@ footer{
 
 .newsletter-section h3{
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .newsletter-section p,
@@ -248,6 +249,10 @@ footer{
     align-self: end;
 }
 
+.newsletter-form label{
+    display: none;
+}
+
 .footer-contact-details .logo{
     width: 180px;
     margin-bottom: 1rem;
@@ -264,8 +269,11 @@ footer{
     margin-bottom: 1.5rem;
 }
 
-.footer-phone-email p{
+.footer-phone-email a{
     font-size: .8rem;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
 }
 
 .footer-socials{
@@ -307,6 +315,23 @@ footer{
 
 .input-subscribe:focus{
     outline: none;
+}
+
+.footer-attribution{
+    padding: 10px;
+    background-color: var(--dark-cyan);
+}
+
+.attribution{
+    font-size: .7rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: white;
 }
 
 @media screen and (min-width: 700px) {
@@ -436,7 +461,7 @@ footer{
         max-width: 560px;
     }
 
-    footer{
+    .main-footer{
         padding: 4rem;
     }
 
