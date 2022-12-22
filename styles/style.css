@@ -250,7 +250,8 @@ header,
 }
 
 .newsletter-form label{
-    display: none;
+    visibility: hidden;
+    font-size: 0;
 }
 
 .footer-contact-details .logo{
